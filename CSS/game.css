@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #212121;
+    background-image: url(../Background/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 3rem 1rem;
+    position: relative;
+}
+header{
+    width: 100%;
+}
+h1{
+    padding: 1rem 2rem;
+    display: block;
+    margin: 0 15%;
+    border: 8px solid #14ffec;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 5rem;
+    color: #14ffec;
+    text-shadow: 0px 0px 35px #14ffec;
+    font-family: 'Russo One', sans-serif;
+}
+
+span{
+    color: rgb(0, 255, 0);
+    text-shadow: 0px 0px 5px rgb(0, 255, 0);
+}
+
+/* ======================================= MAIN BUTTON CONTAINER ======================================= */
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 7rem 0 0;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 3rem;
+    margin: 2rem 5rem;
+}
+.game-btn{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    transition: all 0.1s ease-out;
+}
+/* FIRST BUTTON */
+.green-btn{
+    border: 2rem solid rgb(0, 255, 0);
+    box-shadow: 0px 0px 10px rgb(0, 255, 0) inset,  0px 0px 10px rgb(0, 255, 0);
+    background: none;
+}
+/* SECOND BUTTON */
+.red-btn{
+    border: 2rem solid rgb(255, 0, 225);
+    box-shadow: 0px 0px 10px rgb(255, 0, 225) inset,  0px 0px 10px rgb(255, 0, 225);
+    background: none;
+}
+/* THIRD BUTTON */
+.yellow-btn{
+    border: 2rem solid rgb(255, 255, 0);
+    box-shadow: 0px 0px 10px rgb(255, 255, 0) inset,  0px 0px 10px rgb(255, 255, 0);
+    background: none;
+}
+/* FOURTH BUTTON */
+.blue-btn{
+    border: 2rem solid rgb(0, 0, 255);
+    box-shadow: 0px 0px 10px rgb(0, 0, 255) inset,  0px 0px 10px rgb(0, 0, 255);
+    background: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* ======================================= POP UP DIV BUTTONS ======================================= */
+.pop-up-container{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.966);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#start-btn{
+    padding: 1rem 8rem;
+    font-size: 3rem;
+    color: rgb(0, 255, 0);
+    text-shadow: 5px 5px 20px rgb(0, 255, 0);
+    border: 5px solid rgb(0, 255, 0);
+    font-family: 'Fredoka One', cursive;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgb(0, 255, 0) inset;
+    cursor: pointer;
+    margin: 0 2rem;
+}
+#start-btn:hover{
+    box-shadow: 0px 0px 30px rgb(0, 255, 0) inset;
+}
+#start-btn-2{
+    padding: 1rem 8rem;
+    font-size: 3rem;
+    color: red;
+    text-shadow: 5px 5px 20px red;
+    border: 5px solid red;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px red inset;
+    cursor: pointer;
+    margin: 0 2rem;
+}
+#start-btn-2:hover{
+    box-shadow: 0px 0px 30px red inset;
+}
+
+/* RESTART BUTTON AND EXIT BUTTON */
+.restart-btn{
+    width: 20rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(0, 255, 0);
+    text-shadow: 5px 5px 20px rgb(0, 255, 0);
+    border: 5px solid rgb(0, 255, 0);
+    font-family: 'Fredoka One', cursive;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgb(0, 255, 0) inset;
+    cursor: pointer;
+}
+.restart-btn:hover{
+    box-shadow: 0px 0px 30px rgb(0, 255, 0) inset;
+}
+.exit-btn{
+    color: red;
+    text-shadow: 5px 5px 20px red;
+    border: 5px solid red;
+    box-shadow: 0px 0px 20px red inset;
+}
+.exit-btn:hover{
+    box-shadow: 0px 0px 30px red inset;
+}
+
+
+
+/* JAVASCRIPT ADD ON CLASSES */
+
+.red {
+    background: rgb(255, 0, 225);
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: rgb(0, 255, 0);
+}
+
+.game-over {
+    background: red;
+}

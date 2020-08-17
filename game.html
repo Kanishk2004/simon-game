@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- CUSTOM STYLESHEET -->
+    <link rel="stylesheet" href="CSS/game.css">
+    <link rel="stylesheet" media="only screen and (max-width: 500px)" href="CSS/game-mobile.css">
+
+    <title>Simon Game | Kanishk</title>
+</head>
+
+<body class="">
+
+    <h1 id="level-id">Level <span> 0 </span></h1>
+
+    <section>
+        <a id="restart-btn" class="restart-btn" onclick="startover()">Restart</a>
+        <main>
+            <a id="green" class="game-btn green-btn"></a>
+            <a id="red" class="game-btn red-btn"></a>
+            <a id="yellow" class="game-btn yellow-btn"></a>
+            <a id="blue" class="game-btn blue-btn"></a>
+        </main>
+        <a id="exit-btn" class="exit-btn restart-btn" href="index.html">Exit</a>
+    </section>
+
+    <div class="pop-up-container">
+        <a id="start-btn" onclick="nextSequence()">Start</a>
+        <a id="start-btn-2" href="index.html">Exit</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="simon-game.js"></script>
+</body>
+
+</html>
